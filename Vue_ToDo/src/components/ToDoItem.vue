@@ -2,7 +2,7 @@
     <ul>
       <li>
         <span v-bind:class="{done: todo.completed}">
-          <input v-if="!todo.completed" type="checkbox" v-on:change="todo.completed = !todo.completed">
+          <input v-bind:checked="todo.completed" type="checkbox" v-on:change="todo.completed = !todo.completed">
           <b>{{index+1}}</b>
           {{todo.title}}
         </span>

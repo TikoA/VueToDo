@@ -13,11 +13,7 @@ export default Vue.extend({
   name: 'App',
   data():Object {
     return {
-      todos : [
-        {id:1,title:'Learn Vue JS',completed:false},
-        {id:2,title:'Learn Mongo DB',completed:false},
-        {id:3,title:'Learn How to use gsap',completed:false}
-      ]
+      todos : []
     }
   },
   components: {
